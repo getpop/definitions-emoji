@@ -1,6 +1,6 @@
 <?php
-namespace PoP\EmojiDefinitions\Definitions;
-use PoP\Definitions\Definitions\DefinitionResolverInterface;
+namespace PoP\EmojiDefinitions;
+use PoP\Definitions\DefinitionResolverInterface;
 
 class DefinitionResolver implements DefinitionResolverInterface
 {
