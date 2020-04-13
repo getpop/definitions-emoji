@@ -39,9 +39,9 @@ class DefinitionResolver implements DefinitionResolverInterface
         $emoji = $this->emojis[$this->definition_counters[$group] % count($this->emojis)];
 
         // Increase the counter by 1.
-        $this->definition_counters[$group] = $this->definition_counters[$group]+1;
+        $this->definition_counters[$group] = $this->definition_counters[$group] + 1;
 
         // That's it, return the result
-        return $pre.$emoji;
+        return $pre . $emoji;
     }
 }
