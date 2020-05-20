@@ -1,2 +1,2 @@
 <?php
-\PoP\EmojiDefinitions\Component::init();
+//\PoP\EmojiDefinitions\Component::initialize();
