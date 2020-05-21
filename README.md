@@ -20,12 +20,13 @@ Via Composer
 composer require getpop/definitions-emoji
 ```
 
-<!--
 ## Usage
 
+Initialize the component:
+
 ``` php
+\PoP\EmojiDefinitions\Component::initialize();
 ```
--->
 
 ## Standards
 
