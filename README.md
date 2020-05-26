@@ -25,7 +25,9 @@ composer require getpop/definitions-emoji
 Initialize the component:
 
 ``` php
-\PoP\EmojiDefinitions\Component::initialize();
+\PoP\Root\ComponentLoader::initializeComponents([
+    \PoP\EmojiDefinitions\Component::class,
+]);
 ```
 
 ## Standards
