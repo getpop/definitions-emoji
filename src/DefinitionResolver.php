@@ -1831,14 +1831,21 @@ class DefinitionResolver implements DefinitionResolverInterface
         '🏿',
     ];
 
-    // Allow PoP Persistent Definitions to set a different value
-    public function setPersistedData($persisted_data): void
+    /**
+     * Allow Persistent Definitions to set a different value
+     *
+     * @param array<string, mixed> $persisted_data
+     */
+    public function setPersistedData(array $persisted_data): void
     {
         // The first time there will be no persisted data
         if ($counters = $persisted_data['counters']) {
             $this->definition_counters = $counters;
         }
     }
+    /**
+     * @return array<string, mixed>
+     */
     public function getDataToPersist(): array
     {
         return array(
@@ -1846,7 +1853,7 @@ class DefinitionResolver implements DefinitionResolverInterface
         );
     }
 
-    public function getDefinition($name, $group): string
+    public function getDefinition(string $name, string $group): string
     {
         if (!$this->definition_counters[$group]) {
             $this->definition_counters[$group] = 0;
