@@ -8,8 +8,14 @@ use PoP\Definitions\DefinitionResolverInterface;
 
 class DefinitionResolver implements DefinitionResolverInterface
 {
-    private $definition_counters = [];
-    private $emojis = [
+    /**
+     * @var array<string, int>
+     */
+    private array $definition_counters = [];
+    /**
+     * @var string[]
+     */
+    private array $emojis = [
         '😀',
         '😁',
         '😂',
